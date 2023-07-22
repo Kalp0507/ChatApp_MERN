@@ -1,0 +1,113 @@
+.homepage {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.leftPart {
+    width: 30%;
+    left: 0%;
+}
+
+.topPart {
+    height: fit-content;
+    display: flex;
+    padding: 3px;
+    margin-bottom: 3px;
+}
+
+.menu {
+    position: absolute;
+    top: 2%;
+    right: 70%;
+    margin-right: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.userProfilePicture {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 2%;
+    margin-left: 5px;
+}
+
+#searchInput {
+    margin: auto;
+    margin-top: 15%;
+    width: 96%;
+    border-radius: 12px;
+    border: 1px solid black;
+    padding: 3px;
+    padding-left: 7px;
+}
+
+#searchInput:focus {
+    background-color: rgb(216, 223, 223);
+    outline: none;
+}
+
+.rightPart {
+    width: 70%;
+    right: 0%;
+}
+
+.resDiv {
+    width: fit-content;
+    height: 85vh;
+    background-color: #4c7068;
+    position: absolute;
+    top: 13vh;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.foundUser {
+    background-color: #6d9b97;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px;
+    width: 29vw;
+    font-size: 15px;
+    font-weight: 550;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.foundUser:hover {
+    background-color: #47706d;
+}
+
+.resUserProfilePic {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin: 2px;
+}
+
+.foundUsername {
+    margin-left: 12px;
+}
+
+.closebtn {
+    position: absolute;
+    top: -3.5vh;
+    left: 27vw;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    background-color: #ffffff00;
+}

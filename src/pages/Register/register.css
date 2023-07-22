@@ -1,0 +1,92 @@
+.left {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translate(0%, -70%);
+    padding: 30px;
+}
+
+.right {
+    position: absolute;
+    top: 50%;
+    left: 74%;
+    transform: translate(-50%, -50%);
+    padding: 10px 30px;
+    width: 30%;
+    font-weight: 700;
+    font-size: large;
+    border-left: 1px solid black;
+    padding-left: 50px;
+    height: fit-content;
+}
+
+.right h2 {
+    text-align: center;
+}
+
+.right div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.right div label {
+    width: 100%;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.right div input {
+    width: 100%;
+    display: block;
+    outline: none;
+}
+
+.right button[type='submit'] {
+    width: 55%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    font-size: large;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background-color: #121212;
+    color: white;
+    border: 1px solid #121212;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+.right button[type='submit']:hover {
+    background-color: #fff;
+    color: black;
+    border: 1px solid #121212;
+}
+
+.logRegister {
+    margin-top: 15px;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: row !important;
+}
+
+.logRegister span {
+    font-weight: 400;
+    font-size: small;
+    width: fit-content;
+}
+
+.logRegisterBtn {
+    border: none;
+    outline: none;
+    width: fit-content;
+    color: purple;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+
+.logRegisterBtn:disabled {
+    cursor: not-allowed;
+}

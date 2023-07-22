@@ -1,0 +1,229 @@
+.mainDiv {
+    width: auto;
+    height: 100vh;
+    overflow: hidden;
+    border-left: 5px double black;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 69vw;
+    height: 8vh;
+    background-color: rgb(28, 67, 70);
+    position: fixed;
+    padding: 5px;
+    box-shadow: 0px 3px 10px rgb(133, 132, 132);
+}
+
+.receiverDetail {
+    display: flex;
+    align-items: center;
+    margin-left: 3px;
+    color: white;
+}
+
+.receiverProfile {
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+}
+
+.receiverName {
+    font-weight: 500;
+    font-size: large;
+}
+
+#chatSettings {
+    outline: none;
+    border: none;
+    background-color: #ffffff00;
+}
+
+#chatSettings>* {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 3px;
+    color: white;
+}
+
+
+.chatarea {
+    margin-top: 10vh;
+    height: 82vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.defaultChat {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: 600;
+}
+
+.senderMsg {
+    border-radius: 6px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 2px;
+    /* max-width: 35vw; */
+}
+
+.senderMsg p {
+    padding: 5px;
+    margin: 0px;
+    margin-right: 3px;
+    display: block;
+    width: fit-content;
+    background-color: rgb(201, 231, 225);
+    border-radius: 5px;
+    font-weight: 480;
+    max-width: 35vw;
+    overflow-wrap: break-word;
+}
+
+.receiverMsg {
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 2px;
+}
+
+.receiverMsg p {
+    border-radius: 5px;
+    font-weight: 480;
+    background-color: rgb(255, 227, 184);
+    padding: 6px;
+    margin: 0px;
+    display: block;
+    width: fit-content;
+    margin-left: 3px;
+    max-width: 35vw;
+    overflow-wrap: break-word;
+}
+
+.bottombar {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0px;
+    width: 70vw;
+    height: 5vh;
+    background-color: rgb(28, 67, 70);
+    padding-bottom: 10px;
+    padding-top: 6px;
+    box-shadow: 0px -3px 10px rgb(133, 132, 132);
+}
+
+#expandMenu {
+    background-color: #ffffff00;
+    outline: none;
+    border: none;
+}
+
+
+#expandMenu>* {
+    outline: none;
+    width: 2.5vw;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s;
+
+}
+
+#expandMenu>*:hover {
+    transform: rotate(90deg);
+}
+
+#sendbtn {
+    background-color: #ffffff00;
+    outline: none;
+    border: none;
+}
+
+#sendbtn>* {
+    width: 2.5vw;
+    cursor: pointer;
+    color: white;
+
+}
+
+#chatInput {
+    width: 60vw;
+    padding: 3px 0px 3px 7px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 18px;
+}
+
+#chatInput:focus {
+    background-color: rgba(248, 252, 252, 0.856);
+    outline: none;
+}
+
+.msgpop {
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(90, 122, 122);
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.msgpopbtn {
+    cursor: pointer;
+    padding: 8px;
+    margin-bottom: 2px;
+    background-color: rgb(90, 122, 122);
+    font-size: 14px;
+    font-weight: 500;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    text-align: left;
+    width: 10vw;
+    border-radius: 5px;
+}
+
+.msgpopbtn:hover {
+    background-color: rgb(81, 104, 105);
+}
+
+.starBottombar {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0px;
+    width: 70vw;
+    height: 5vh;
+    background-color: rgb(28, 67, 70);
+    padding-bottom: 10px;
+    padding-top: 6px;
+    z-index: 1000;
+}
+
+.starBottombar>.closeStarbtn {
+    width: 98%;
+    border: none;
+    background-color: #ffffff00;
+    font-size: 16px;
+    font-weight: 550;
+    color: white;
+    border-radius: 6px;
+}
+
+.starBottombar>.closeStarbtn:hover {
+    background-color: #ffffff48;
+}
